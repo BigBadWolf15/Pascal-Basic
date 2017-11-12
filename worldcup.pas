@@ -8,7 +8,6 @@ begin
   clrscr;
   writeln('CHUONG TRINH THONG BAO WORLD CUP');
   writeln('****************************************');
-  writeln;
   write('Nhap nam hien tai: ');readln(nam);
   case nam mod 4 of
     1: writeln('Con 1 nam nua toi World Cup');

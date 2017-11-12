@@ -16,8 +16,10 @@ begin
         if nam mod 4 = 0 then writeln('Thang nay co 29 ngay')
         else writeln('Thang nay co 28 ngay');
       end;
+  
   else writeln('Nhap khong hop le');
   end;
+  
   writeln('Press any key to exit');
   repeat delay(1) until KeyPressed;
 end.
