@@ -34,9 +34,9 @@ begin
     if luachon > 5 then luachon := 5;
     diem += luachon;
   end;
-  if diem > 41 then writeln('Ban la hoc sinh gioi, rat cham chi hoc tap !');
-  if (diem < 41) and (diem > 31) then writeln('Ban la hoc sinh kha, hoc hanh tuong doi tot nhung can co gang hon !')
-  else writeln('Ban can phai co gang nhieu hon nua trong hoc tap !');
+  if diem >= 41 then writeln('Ban la hoc sinh gioi, rat cham chi hoc tap !');
+  if (diem < 41) and (diem >= 31) then writeln('Ban la hoc sinh kha, hoc hanh tuong doi tot nhung can co gang hon !');
+  if diem < 31 then writeln('Ban can phai co gang nhieu hon nua trong hoc tap !');
   writeln;
   writeln('Programmed by @Louiscc');
   writeln('Press any key to exit');
