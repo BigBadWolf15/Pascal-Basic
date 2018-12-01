@@ -16,7 +16,7 @@ var
 begin(*vong lap chinh*)
   repeat
     clrscr;
-    write('Nhap vao mot so: '); readln(N);
+    write('Nhap vao mot so NGUYEN: '); readln(N);
     writeln('Xin vui long chon 1 trong cac che do: ');
     writeln('Dem so chu so le: nhap so 1');
     writeln('Dem so chu so chan: nhap so 2');
