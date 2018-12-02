@@ -60,4 +60,5 @@ begin(*vong lap chinh*)
 
   until mode = 0; (*Phan mem se thoat neu gia tri cua mode = 0*)
 end.
+(* Thoi gian chay du kien: < 10s*)
 
