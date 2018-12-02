@@ -47,6 +47,7 @@ begin(*vong lap chinh*)
     end;
 
     (* Ket thuc qua trinh tinh toan, bat dau xuat ket qua*)
+    clrscr; writeln('So ban nhap la ',N,' co:');
    if mode = 1 then writeln('So chu so le: ',le);
    if mode = 2 then writeln('So chu so chan: ',chan);
    if mode = 3 then writeln('So chu so 0: ',zero);
