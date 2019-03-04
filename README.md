@@ -6,3 +6,4 @@ I don't like hacking, so i alway try my best to prevent that
 This is some Example wrote by me !
 
 #Under MIT liscense
+STUPITTTTT
