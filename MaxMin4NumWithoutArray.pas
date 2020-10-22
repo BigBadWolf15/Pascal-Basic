@@ -1,4 +1,7 @@
-﻿program HelloWorld(output);
+{
+Created by Le Thanh Trung - 11 Ly 1 - 22/10/2020 
+}
+ program HelloWorld;
 
 var
   a, b, c, d: LongInt;
