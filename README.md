@@ -9,4 +9,4 @@ This is some Example wrote by me !
 STUPITTTTT
 
 
-Property of LTT - PTNK 1922
+# Property of LTT - PTNK 1922
