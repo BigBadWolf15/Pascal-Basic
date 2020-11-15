@@ -15,7 +15,7 @@ begin
     begin
       if (control = false) and (a[i] <> 0) then
       begin
-        a[i] := 0;
+        a[i] := 0;//idk what it does here
         control := true;
       end
       else control := false
