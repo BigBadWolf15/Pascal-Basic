@@ -1,4 +1,5 @@
-﻿{Created by Le Thanh Trung - 03/11/2020}
+﻿{Created by Le Thanh Trung - 03/11/202
+0}
 program If8;
 
 var
