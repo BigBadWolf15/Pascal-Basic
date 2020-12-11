@@ -1,7 +1,7 @@
 ﻿{
 	Created by Le Thanh Trung - 11 Ly 1 - 04/12/2020
 }
-program bay_a;
+program bay_b;
 uses crt;
 var i, j, n: longint;
 prime : boolean;

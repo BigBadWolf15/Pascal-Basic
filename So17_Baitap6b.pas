@@ -1,7 +1,7 @@
 ﻿{
 	Created by Le Thanh Trung - 11 Ly 1 - 04/12/2020
 }
-program sau_a;
+program sau_b;
 uses crt;
 var i, n : longint;
 prime: boolean;
