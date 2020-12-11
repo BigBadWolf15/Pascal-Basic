@@ -1,4 +1,4 @@
-﻿{
+{
 	Created by Le Thanh Trung - 11 Ly 1 - 04/12/2020
 }
 program sau_b;
