@@ -3,8 +3,8 @@
 }
 program bai2;
 uses crt;
-var N, i, index, j, x: Integer;
-A:Array[1..100] of Integer;
+var N, i, index, j, x: LongInt;
+A: Array[1..100] of LongInt;
 Incrementing :Boolean;
 begin
 	clrscr;

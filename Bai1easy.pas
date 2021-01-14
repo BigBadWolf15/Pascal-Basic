@@ -1,7 +1,7 @@
 program aswe;
 uses crt;
-var N, max, min, NP, NO, NS, x, y, i, j: Integer;
-MangNhap, MangNguyenTo, MangLap, MangXoa :Array[1..100] of Integer;
+var N, max, min, NP, NO, NS, x, y, i, j: LongInt;
+MangNhap, MangNguyenTo, MangLap, MangXoa :Array[1..100] of LongInt;
 Prime :Boolean;
 begin
 	clrscr;

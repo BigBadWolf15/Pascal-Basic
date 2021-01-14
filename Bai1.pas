@@ -3,8 +3,8 @@
 }
 program Bai1;
 uses crt;
-var N, i, max, min, j, NumPrime, x, NumOccur, y, NumSth: Integer;
-A, B, C, D :Array[1..100] of Integer;
+var N, i, max, min, j, NumPrime, x, NumOccur, y, NumSth: LongInt;
+A, B, C, D :Array[1..100] of LongInt;
 Prime :Boolean;
 begin
 	clrscr;
