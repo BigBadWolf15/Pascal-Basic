@@ -35,7 +35,7 @@ begin
 	//Cau d, d chi chay neu cau c fail
 	//implemented using Insertion Sort with complexity O(n^2)
 	if not(Incrementing) then begin
-		writeln('Sorting');
+		writeln('Sorting...');
 		for i:= 2 to N do begin
 			index:= A[i];
 			j:= i;
@@ -53,18 +53,16 @@ begin
 	end;
 	writeln;
 
-	//Cau e, tam thoi cu chen vao roi sap xep lai
+	//Cau e, su dung Bubble Sort de giai quyet
 	write('Nhap X: '); readln(x);
 	N:= N + 1;
 	A[N]:= x;
-	for i:= 2 to N do begin
-			index:= A[i];
-			j:= i;
-			while ((j > 1) and (A[j - 1] > index)) do begin
-				A[j]:= A[j - 1];
-				j:= j - 1;
-			end;
-			A[j]:= index;
+	for i:= N downto 2 do begin
+		if A[i] < A[i - 1] then begin
+			A[i]:= A[i] + A[i - 1];
+			A[i - 1]:= A[i] - A[i - 1];
+			A[i]:= A[i] - A[i - 1];
+		end;	
 	end;
 
 	for i:= 1 to N do begin
