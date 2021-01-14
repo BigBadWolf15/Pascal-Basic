@@ -1,3 +1,6 @@
+{
+	Created by Le Thanh Trung - 14/01/2021
+}
 program Bai1;
 uses crt;
 var N, i, max, min, j, NumPrime, x, NumOccur, y, NumSth: Integer;
@@ -9,7 +12,7 @@ begin
 	//Cau a, super easy.... 
 	for i:= 1 to N do begin
 		repeat begin
-		write('Nhap phan tu thu ',i,' = '); readln(A[i]);
+			write('Nhap phan tu thu ',i,' = '); readln(A[i]);
 		end until (A[i] >= 0);
 	end;
 
@@ -48,6 +51,7 @@ begin
 	end;
 	writeln('Day co so so nguyen to la: ',NumPrime);
 	write('Cac so nguyen to la: ');
+	
 	for i:= 1 to NumPrime do write(B[i],' ');
 	writeln;
 	writeln;

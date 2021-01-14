@@ -1,6 +1,9 @@
-program gigidotaucungkobik;
+{
+	Created by Le Thanh Trung - 14/01/2021
+}
+program bai2;
 uses crt;
-var N, i, index, j: Integer;
+var N, i, index, j, x: Integer;
 A:Array[1..100] of Integer;
 Incrementing :Boolean;
 begin
@@ -8,7 +11,9 @@ begin
 	write('Nhap N= '); readln(N);
 	//Cau a
 	for i:= 1 to N do begin
-		write('Nhap phan tu thu ',i,' = '); readln(A[i]);
+		repeat begin
+			write('Nhap phan tu thu ',i,' = '); readln(A[i]);
+		end until (A[i] >= 0);
 	end;
 
 	//Cau b
@@ -27,9 +32,10 @@ begin
 	if (A[1] <> A[N]) and Incrementing then writeln('Day tang dan!')
 	else writeln('Day khong tang dan!');
 
-	//Cau d, d chi chay neu , implemented using Insertion Sort with complexity O(n^2)
+	//Cau d, d chi chay neu cau c fail
+	//implemented using Insertion Sort with complexity O(n^2)
 	if not(Incrementing) then begin
-	writeln('Sorting');
+		writeln('Sorting');
 		for i:= 2 to N do begin
 			index:= A[i];
 			j:= i;
@@ -40,11 +46,30 @@ begin
 			A[j]:= index;
 		end;
 	end;
+
 	writeln;
 	for i:= 1 to N do begin
 		write(A[i],' ')
 	end;
+	writeln;
 
-	
+	//Cau e, tam thoi cu chen vao roi sap xep lai
+	write('Nhap X: '); readln(x);
+	N:= N + 1;
+	A[N]:= x;
+	for i:= 2 to N do begin
+			index:= A[i];
+			j:= i;
+			while ((j > 1) and (A[j - 1] > index)) do begin
+				A[j]:= A[j - 1];
+				j:= j - 1;
+			end;
+			A[j]:= index;
+	end;
 
+	for i:= 1 to N do begin
+		write(A[i],' ')
+	end;
+
+	readln;
 end.
