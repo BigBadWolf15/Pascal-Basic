@@ -29,6 +29,7 @@ begin
 	for i:= 1 to N - 1 do begin
 		if A[i] > A[i + 1] then Incrementing:= False;
 	end;
+	
 	if (A[1] <> A[N]) and Incrementing then writeln('Day tang dan!')
 	else writeln('Day khong tang dan!');
 
@@ -36,6 +37,7 @@ begin
 	//implemented using Insertion Sort with complexity O(n^2)
 	if not(Incrementing) then begin
 		writeln('Sorting...');
+
 		for i:= 2 to N do begin
 			index:= A[i];
 			j:= i;

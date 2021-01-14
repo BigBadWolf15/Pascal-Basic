@@ -11,9 +11,9 @@ begin
 	write('Nhap N= '); readln(N);
 	//Cau a, super easy.... 
 	for i:= 1 to N do begin
-		repeat begin
+		repeat
 			write('Nhap phan tu thu ',i,' = '); readln(A[i]);
-		end until (A[i] >= 0);
+		until (A[i] >= 0);
 	end;
 
 	//Cau b, easy...
@@ -46,12 +46,12 @@ begin
 
 		if Prime and (A[i] >= 2) then begin
 			NumPrime:= NumPrime + 1;
-			B[NumPrime]:= A[i];
+			B[NumPrime]:= A[i];//writeln(A[i]);
 		end;
 	end;
 	writeln('Day co so so nguyen to la: ',NumPrime);
 	write('Cac so nguyen to la: ');
-	
+	//Co the bo dong sau neu khong dung toi mang B
 	for i:= 1 to NumPrime do write(B[i],' ');
 	writeln;
 	writeln;
@@ -62,17 +62,18 @@ begin
 	for i:= 1 to N do begin
 		if A[i] = x then begin
 			NumOccur:= NumOccur + 1;
-			C[NumOccur]:= i;
+			C[NumOccur]:= i;//writeln(A[i]);
 		end;
 	end;
 	writeln('So ',x,' xuat hien ',NumOccur,' lan o cac vi tri:');
-	for i:= 1 to NumOccur do write(C[i],' ');
+	for i:= 1 to NumOccur do write(C[i],' ');//Co the bo
 	writeln;
 	writeln;
 
 	//Cau f, y tuong la tao ra mot mang D moi chua cac phan tu cua A KHONG BAO GOM A[i] = y
-	NumSth:= 0;
-	write('Nhap so nguyen Y: '); readln(y);
+	//Do la static array nen khong the thay doi gia tri
+	//BAT BUOC phai tao mang D moi
+	write('Nhap so nguyen Y: '); readln(y); NumSth:= 0;
 	for i:= 1 to N do begin
 		if A[i] <> y then begin
 			NumSth:= NumSth + 1;
@@ -80,6 +81,5 @@ begin
 		end;
 	end;
 	for i:= 1 to NumSth do write(D[i],' ');
-
 	readln;
 end.
