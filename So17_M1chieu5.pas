@@ -52,10 +52,10 @@ begin
 		for j:= 2 to round(sqrt(A[i]) + 1) do
 			if A[i] mod j = 0 then prime:= False;
 
-			if prime and (A[i] >= 2) then begin
-				countB:= countB + 1;
-				B[countB]:= A[i];
-			end;
+		if prime and (A[i] >= 2) then begin
+			countB:= countB + 1;
+			B[countB]:= A[i];
+		end;
 	end;
 		for i:= 1 to countB do if ((x - B[i]) < (x - sPrime)) and (B[i] < x) then sPrime:= B[i];
 
