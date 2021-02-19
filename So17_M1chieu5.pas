@@ -49,9 +49,9 @@ begin
 	write('Nhap X= '); readln(x);
 	for i:= 1 to n do begin
 		prime:= True;
-		for j:= 2 to round(sqrt(A[i]) + 1) do begin
+		for j:= 2 to round(sqrt(A[i]) + 1) do
 			if A[i] mod j = 0 then prime:= False;
-		end;
+
 			if prime and (A[i] >= 2) then begin
 				countB:= countB + 1;
 				B[countB]:= A[i];
@@ -63,7 +63,7 @@ begin
 	
 
 	//Cau f
-	for i:= 1 to n do begin
+	for i:= 1 to n do
 		if A[i] = 0 then count0:= count0 + 1
 		else if A[i] mod 2 = 0 then begin
 			countChan:= countChan + 1;
@@ -72,14 +72,14 @@ begin
 			countLe:= countLe + 1;
 			le[countLe]:= A[i];
 		end;
-	end;
+	
 
 	countF:= countLe + count0 + countChan;
-	for i:= 1 to countF do begin
+	for i:= 1 to countF do
 		if i <= countLe then F[i]:= Le[i]
 		else if i <= countLe + count0 then F[i]:= 0
 		else F[i]:= Chan[i - countLe - count0];
-	end;
+
 
 	for i:= 1 to countF do write(F[i],' ');
 	writeln;
@@ -100,10 +100,10 @@ begin
 					finished:= True;
 				end;	
 			if not(finished) then begin
-					countG:= countG + 1;
-					countGG:= countGG + 1;
-					g[countG]:= A[i];
-					gg[countGG]:= 1;
+				countG:= countG + 1;
+				countGG:= countGG + 1;
+				g[countG]:= A[i];
+				gg[countGG]:= 1;
 			end;
 		end;
 	max:= 0;

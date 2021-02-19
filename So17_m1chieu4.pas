@@ -19,9 +19,9 @@ begin
 	writeln;
 	for i:= 1 to n do begin
 		prime:= True;
-		for j:= 2 to round(sqrt(A[i]) + 1) do begin
+		for j:= 2 to round(sqrt(A[i]) + 1) do
 			if A[i] mod j = 0 then prime:= False;
-		end;
+		
 			if not(prime) then begin
 				countB:= countB + 1;
 				B[countB]:= A[i];
@@ -49,9 +49,9 @@ begin
 	writeln;
 	for i:= 1 to n do begin
 		prime:= True;
-		for j:= 2 to round(sqrt(A[i]) + 1) do begin
+		for j:= 2 to round(sqrt(A[i]) + 1) do
 			if A[i] mod j = 0 then prime:= False;
-		end;
+		
 			if prime and (A[i] >= 2) then A[i]:= 0;
 	end;
 	for i:= 1 to n do if A[i] <> 0 then write(A[i],' ');
