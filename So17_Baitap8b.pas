@@ -14,7 +14,7 @@ begin
 	if n < 2 then exit;
 
 
-#444
+#444\
 	b:= 1;
 	write(b,' ');
 	if n < 3 then exit;
