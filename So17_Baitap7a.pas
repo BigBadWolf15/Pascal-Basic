@@ -13,6 +13,7 @@ begin
 	for i:= 2 to n do begin
 		prime:= True;
 		
+		
 		for j:= 2 to round(sqrt(i)) do begin 
 			if i mod j = 0 then prime:= False;
 		end;
