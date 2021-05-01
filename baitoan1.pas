@@ -20,6 +20,9 @@ begin
       end
       else control := false
       
+	  
+	  
+	  
     end;
   end;
   writeln(a[1]);
