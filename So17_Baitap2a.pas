@@ -16,6 +16,7 @@ begin
 		s:= s + p;
 		p:= p * x;
 	end;
+	
 	writeln('Ket qua la: ',s);
 	readln;
 end.
