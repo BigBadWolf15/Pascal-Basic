@@ -10,6 +10,9 @@ begin
 	repeat
 	begin
 		i:= i + 1;
+		
+		
+		
 		sum:= sum + i;
 	end until sum > limit;
 	writeln('Ket qua la: ',i);
